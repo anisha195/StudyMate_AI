@@ -272,10 +272,8 @@ a page — it would need OCR, which this project doesn't include).
 → The document status must be **Ready**, and you must have it selected in the Study
 Chat dropdown (not "All materials") for retrieval to search it.
 
-**`ANTHROPIC_API_KEY` errors (401/403) when asking a question**
-→ Double-check the key in `backend/.env` is correct and active on
-https://console.anthropic.com, and that you saved the file and restarted `npm run dev`
-(env files are only read on startup).
+**`GROQ_API_KEY` errors (401/403) when asking a question**
+→ Double-check that the `GROQ_API_KEY` in `backend/.env` is correct and active on the Groq Console. Also check that `GROQ_MODEL` is set to a supported model. After changing the `.env` file, save it and restart `npm run dev` because environment variables are loaded when the server starts.
 
 **Port already in use (`EADDRINUSE`)**
 → Something else is already using 5000, 5173, or 8001. Either stop that process, or
