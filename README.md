@@ -147,8 +147,8 @@ MONGO_URI=mongodb://localhost:27017/studymate_ai
 # or, if using Atlas: mongodb+srv://user:password@cluster0.xxxxx.mongodb.net/studymate_ai
 
 JWT_SECRET=any_long_random_string_you_make_up_here
-ANTHROPIC_API_KEY=sk-ant-your-real-key-here
-CLAUDE_MODEL=claude-sonnet-4-6
+groq_api_key =
+groq_model= openai/gpt-oss-120b
 AI_SERVICE_URL=http://localhost:8001
 CLIENT_URL=http://localhost:5173
 PORT=5000
